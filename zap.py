@@ -89,8 +89,8 @@ class Config:
     """
 
     # ── Core ──────────────────────────────────────────────────────────
-    BOT_TOKEN: str = os.environ.get("BOT_TOKEN", "YOUR_BOT_TOKEN_HERE")
-    MONGO_URI: str = os.environ.get("MONGO_URI", "mongodb://localhost:27017")
+    BOT_TOKEN: str = os.environ.get("BOT_TOKEN", "8800707730:AAHm2hGRHU0tH8hEAm_3StnHep2qpD2NXUk")
+    MONGO_URI: str = os.environ.get("MONGO_URI", "mongodb+srv://zap3x:Blitzz@cluster0.yfpifje.mongodb.net/?appName=Cluster07")
     DB_NAME: str = "zap_papa"
 
     # ── User Defaults ─────────────────────────────────────────────────
@@ -99,7 +99,7 @@ class Config:
     DEFAULT_CREDITS: int = 0
 
     # ── Admin ─────────────────────────────────────────────────────────
-    _admin_ids_str: str = os.environ.get("ADMIN_IDS", "")
+    _admin_ids_str: str = os.environ.get("ADMIN_IDS", "6325764594")
     ADMIN_IDS: List[int] = []
     if _admin_ids_str:
         try:
@@ -107,7 +107,7 @@ class Config:
         except ValueError:
             ADMIN_IDS = []
 
-    OWNER_ID: int = int(os.environ.get("OWNER_ID", "0"))
+    OWNER_ID: int = int(os.environ.get("OWNER_ID", "6325764594"))
 
     # ── Telegram Limits ───────────────────────────────────────────────
     MAX_MESSAGE_LENGTH: int = 4000
